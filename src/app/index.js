@@ -19,13 +19,8 @@ angular.module('barret', [
 
     $urlRouterProvider.otherwise('/');
   })
+  .run(function() {
+    Parse.initialize("1Pcgf1sCkpwshtEaCiRvIkYzKgqpahQEZfuYgmdw", "FCbgR0mh3GDKW1MpElCUG1LcfKDm9ttzVZ3FPVIR");
+  })
 ;
 
-Parse.initialize("1Pcgf1sCkpwshtEaCiRvIkYzKgqpahQEZfuYgmdw", "FCbgR0mh3GDKW1MpElCUG1LcfKDm9ttzVZ3FPVIR");
-
-
-//var TestObject = Parse.Object.extend("TestObject");
-//var testObject = new TestObject();
-//testObject.save({foo: "bar"}).then(function(object) {
-//  alert("yay! it worked");
-//});

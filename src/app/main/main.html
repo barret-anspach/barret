@@ -4,19 +4,17 @@
   <h1>My name is Barret Anspach. I write music.</h1>
   <h2>I'm also a graphic designer and front-end web developer.</h2>
 
-  <hr/>
-
   <section id="music">
-    <article ng-repeat="work in works | orderBy : title">
-      <figure ng-class="{'no_image': !work.imgUrl}">
-        <img ng-if="work.imgUrl" ng-src="{{work.imgUrl}}" alt=""/>
+    <article ng-repeat="work in works | orderBy : '-date'">
+      <figure ng-class="{'no_image': !work.image.url}">
+        <img ng-if="work.image.url" ng-src="{{work.image.url}}" alt=""/>
         <div class="title">
           <h2>{{work.title}}</h2>
           <h4 ng-if="work.instrumentation || work.duration">
             <span class="instrumentation"><span ng-if="work.instrumentation">for</span> {{work.instrumentation}} &emsp; </span>
             <span class="inline_block lightweight">{{work.duration}} min</span></h4>
         </div>
-        <div class="caption" ng-if="work.imgUrl">{{work.imgCaption}}</div>
+        <div class="caption" ng-if="work.image.url">{{work.imgCaption}}</div>
       </figure>
 
       <div class="description">
@@ -27,33 +25,16 @@
 
     <hr/>
   </section>
-  <!--<section id="music">-->
-    <!--<header>-->
-      <!--<h3>Here's some music I've written:</h3>-->
-    <!--</header>-->
-    <!--<article ng-repeat="work in works | orderBy : title" ng-class="{'music-figure': work.imgUrl}">-->
-      <!--<span ng-class="{'title_desc': work.imgUrl}">-->
-        <!--<div class="title">-->
-          <!--<h2>{{work.title}}</h2>-->
-          <!--<h4 ng-if="work.instrumentation || work.duration"><span ng-if="work.instrumentation">for</span> {{work.instrumentation}} &emsp; <span class="lightweight">{{work.duration}}</span></h4>-->
-        <!--</div>-->
-        <!--<div class="description">-->
-          <!--<span ng-bind-html="work.description"></span>-->
-          <!--<a class="tag" ng-repeat="tag in work.tags">{{tag.name}}</a>-->
-        <!--</div>-->
-      <!--</span>-->
 
-      <!--<figure ng-if="work.imgUrl">-->
-        <!--<img ng-src="{{work.imgUrl}}" alt=""/>-->
-        <!--<div class="caption">{{work.imgCaption}}</div>-->
-      <!--</figure>-->
-    <!--</article>-->
-    <!--<hr/>-->
-  <!--</section>-->
+  <section id="bio">
+    <article>
+      <p>I graduated from The Juilliard School in 2009 with a Bachelors of Music with Scholastic Distinction, and in 2010 with a Masters in Music. Interdisciplinary work with dance and pop music has led to a number of compositions and productions, including orchestral premieres at the Pacific Northwest Ballet for newly-choreographed ballets, and arrangement work for a number of Seattle-based musical artists.</p>
+    </article>
+  </section>
 
   <hr/>
   <h1>Get in touch.</h1>
-  <h2>Contact me at barret@anspa.ch</h2>
+  <h2>Contact me at <a href="mailto:wba@barretanspach.com" target="_blank">wba [at] barretanspach.com</a></h2>
   <hr/>
 
 </div>

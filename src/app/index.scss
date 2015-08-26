@@ -90,6 +90,7 @@ a {
   width: 100%;
   max-width: 56em;
   padding: 4em;
+  padding: 8vmin;
   margin: 0 auto;
 }
 
@@ -103,10 +104,20 @@ section {
   display: block;
   width: 100%;
   max-width: 56em;
-  margin: 6vmin 0;
+  margin: 12vmin 0;
   padding-top: 6vmin;
   border-top: 2pt solid $primary_color;
   border-bottom: 2pt solid $primary_color;
+  & + & {
+    border-top: none;
+    margin-top: 0;
+  }
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+  &:last-of-type {
+    padding-bottom: 6vmin;
+  }
 }
 
 header {
@@ -144,7 +155,7 @@ article {
 
     &.no_image .title h2,
     &.no_image .title h4 {
-      color: $secondary_color;
+      color: rgba($secondary_color, .88);
       //background-color: $primary_color;
     }
     .caption {
@@ -155,10 +166,10 @@ article {
       right: 0;
       bottom: 0;
       padding-bottom: 1vmin;
-      border-bottom: 2pt solid $secondary_color;
+      border-bottom: 2pt solid rgba($secondary_color, .88);
       margin-bottom: ($margin / 2);
       margin-right: ($margin / 2);
-      color: $secondary_color;
+      color: rgba($secondary_color, .88);
       font-size: .83em;
       font-weight: 600;
       text-align: right;
@@ -174,7 +185,7 @@ article {
       padding: 1em 1.5em 2em;
       top: 0;
       left: 0;
-      color: $secondary_color;
+      color: rgba($secondary_color, .88);
       h2 {
         font-weight: 700;
         margin-top: 0;
@@ -207,9 +218,15 @@ article {
         color: $tertiary_color;
       }
     }
-    //span {
-    //  font-family: "garamond-premier-pro-caption", serif;
-    //  font-style: italic;
-    //}
+  }
+}
+
+section#bio {
+  article {
+    padding-bottom: 0;
+  }
+  article p {
+    padding: 6vmin 0;
+    font-weight: 600;
   }
 }
