@@ -1,0 +1,15 @@
+<svg id="monogram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2016 252" enable-background="new 0 0 2016 252">
+  <rect fill="none" x="0" y="0" width="2016" height="252"/>
+  <g id="wba">
+    <path id="monogram-path-1" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M73.5,56h70c19.3,0,35,15.7,35,35s-15.7,35-35,35"
+          data-path-hover="M73.5,56h70c19.3,0,35,15.7,35,35s-15.7,35-35,35"/>
+    <path id="monogram-path-2" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M73.5,56 73.5,196"
+          data-path-hover="M73.5,56 73.5,196"/>
+    <path id="monogram-path-3" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M73.5,56 178.5,196"
+          data-path-hover="M73.5,56 178.5,196"/>
+    <path id="monogram-path-4" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M88.35,153.29 97.013,172.551 105.675,153.29 114.338,172.551 123,153.29"
+          data-path-hover="M88.35,153.29 97.013,172.551 105.675,153.29 114.338,172.551 123,153.29"/>
+    <path id="monogram-path-5" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M73.5,196h70c19.3,0,35-15.7,35-35c0-19.3-15.7-35-35-35h-70"
+          data-path-hover="M73.5,196h70c19.3,0,35-15.7,35-35c0-19.3-15.7-35-35-35h-70"/>
+  </g>
+</svg>

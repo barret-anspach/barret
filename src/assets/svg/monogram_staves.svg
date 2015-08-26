@@ -1,0 +1,32 @@
+<!--<svg id="monogram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2016 252" enable-background="new 0 0 2016 252">-->
+  <!--<rect fill="none" x="0" y="0" width="2016" height="252"/>-->
+  <!--<g id="wba">-->
+    <!--<path id="monogram-path-1" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,56 2016,56"-->
+          <!--data-path-hover="M955.5,56h70c19.3,0,35,15.7,35,35s-15.7,35-35,35"/>-->
+    <!--<path id="monogram-path-2" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2016,91 2,91"-->
+          <!--data-path-hover="M955.5,56v140"/>-->
+    <!--<path id="monogram-path-3" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,126 2016,126"-->
+          <!--data-path-hover="M955.5,56l105,140"/>-->
+    <!--<path id="monogram-path-4" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,161 99.75,161 126,161 152.25,161 2016,161"-->
+          <!--data-path-hover="M970.3,153.3l8.7,19.3l8.7-19.3l8.7,19.3l8.7-19.3"/>-->
+    <!--<path id="monogram-path-5" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,196 2016,196"-->
+          <!--data-path-hover="M955.5,196h70c19.3,0,35-15.7,35-35s-15.7-35-35-35h-70"/>-->
+  <!--</g>-->
+<!--</svg>-->
+
+<svg id="monogram" xmlns="http://www.w3.org/2000/svg" ng-attr-width="{{monogram.width}}" ng-attr-height="{{monogram.height}}">
+<rect fill="none" x="0" y="0" ng-attr-width="{{monogram.width}}" ng-attr-height="{{monogram.height}}"/>
+<g id="wba">
+  <path id="monogram-path-1" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,56 2016,56"
+        data-path-hover="M955.5,56h70c19.3,0,35,15.7,35,35s-15.7,35-35,35"/>
+  <path id="monogram-path-2" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2016,91 2,91"
+        data-path-hover="M955.5,56v140"/>
+  <path id="monogram-path-3" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,126 2016,126"
+        data-path-hover="M955.5,56l105,140"/>
+  <path id="monogram-path-4" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,161 99.75,161 126,161 152.25,161 2016,161"
+        data-path-hover="M970.3,153.3l8.7,19.3l8.7-19.3l8.7,19.3l8.7-19.3"/>
+  <path id="monogram-path-5" fill="none" stroke="rgb(55, 53, 53)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2,196 2016,196"
+        data-path-hover="M955.5,196h70c19.3,0,35-15.7,35-35s-15.7-35-35-35h-70"/>
+</g>
+</svg>
+

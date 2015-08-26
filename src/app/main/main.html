@@ -1,0 +1,60 @@
+<div id="img" hide-sm show-gt-md></div>
+
+<div id="page">
+  <h1>My name is Barret Anspach. I write music.</h1>
+  <h2>I'm also a graphic designer and front-end web developer.</h2>
+
+  <hr/>
+
+  <section id="music">
+    <article ng-repeat="work in works | orderBy : title">
+      <figure ng-class="{'no_image': !work.imgUrl}">
+        <img ng-if="work.imgUrl" ng-src="{{work.imgUrl}}" alt=""/>
+        <div class="title">
+          <h2>{{work.title}}</h2>
+          <h4 ng-if="work.instrumentation || work.duration">
+            <span class="instrumentation"><span ng-if="work.instrumentation">for</span> {{work.instrumentation}} &emsp; </span>
+            <span class="inline_block lightweight">{{work.duration}} min</span></h4>
+        </div>
+        <div class="caption" ng-if="work.imgUrl">{{work.imgCaption}}</div>
+      </figure>
+
+      <div class="description">
+        <span ng-bind-html="work.description"></span>
+        <a class="tag" ng-repeat="tag in work.tags">{{tag.name}}</a>
+      </div>
+    </article>
+
+    <hr/>
+  </section>
+  <!--<section id="music">-->
+    <!--<header>-->
+      <!--<h3>Here's some music I've written:</h3>-->
+    <!--</header>-->
+    <!--<article ng-repeat="work in works | orderBy : title" ng-class="{'music-figure': work.imgUrl}">-->
+      <!--<span ng-class="{'title_desc': work.imgUrl}">-->
+        <!--<div class="title">-->
+          <!--<h2>{{work.title}}</h2>-->
+          <!--<h4 ng-if="work.instrumentation || work.duration"><span ng-if="work.instrumentation">for</span> {{work.instrumentation}} &emsp; <span class="lightweight">{{work.duration}}</span></h4>-->
+        <!--</div>-->
+        <!--<div class="description">-->
+          <!--<span ng-bind-html="work.description"></span>-->
+          <!--<a class="tag" ng-repeat="tag in work.tags">{{tag.name}}</a>-->
+        <!--</div>-->
+      <!--</span>-->
+
+      <!--<figure ng-if="work.imgUrl">-->
+        <!--<img ng-src="{{work.imgUrl}}" alt=""/>-->
+        <!--<div class="caption">{{work.imgCaption}}</div>-->
+      <!--</figure>-->
+    <!--</article>-->
+    <!--<hr/>-->
+  <!--</section>-->
+
+  <hr/>
+  <h1>Get in touch.</h1>
+  <h2>Contact me at barret@anspa.ch</h2>
+  <hr/>
+
+</div>
+

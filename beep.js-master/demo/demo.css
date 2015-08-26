@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+
+
+
+    /*************/
+   /*           */
+  /*   Fonts   */
+ /*           */
+/*************/
+
+
+/*
+
+	Yes, the following font file names and formats MUST BE CONTAINED IN QUOTES
+	otherwise Firefox will refuse to load them. Chrome? Safari? Opera? Totally fine.
+	Firefox loading backround-images using url() and no quotes? Totally fine.
+	It’s literally just the @font-face rules that Firefox needs quotes for. 
+
+*/
+
+
+/*  Ginger Thin (as LIGHTER)  */
+
+@font-face {
+
+	font-family: Ginger;
+	font-weight: 100;
+	font-style:  normal;
+	src: url( '../demo/fonts/ginger-thin.eot' );
+	src: url( '../demo/fonts/ginger-thin.eot?#iefix' ) format( 'embedded-opentype' ),
+		 url( '../demo/fonts/ginger-thin.woff' ) format( 'woff' ),
+		 url( '../demo/fonts/ginger-thin.ttf'  ) format( 'truetype' ),
+		 url( '../demo/fonts/ginger-thin.svg#f37_ginger_thin' ) format( 'svg' );
+}
+
+
+/*  Ginger Light (as NORMAL)  */
+
+@font-face {
+
+	font-family: Ginger;
+	font-weight: normal;
+	font-style:  normal;
+	src: url( '../demo/fonts/ginger-light.eot' );
+	src: url( '../demo/fonts/ginger-light.eot?#iefix' ) format( 'embedded-opentype' ),
+		 url( '../demo/fonts/ginger-light.woff' ) format( 'woff' ),
+		 url( '../demo/fonts/ginger-light.ttf'  ) format( 'truetype' ),
+		 url( '../demo/fonts/ginger-light.svg#f37_ginger_light' ) format( 'svg' );
+}
+
+
+/*  Ginger Bold (as BOLD)  */
+
+@font-face {
+
+	font-family: Ginger;
+	font-weight: bold;
+	font-style:  normal;
+	src: url( '../demo/fonts/ginger-bold.eot' );
+	src: url( '../demo/fonts/ginger-bold.eot?#iefix' ) format( 'embedded-opentype' ),
+		 url( '../demo/fonts/ginger-bold.woff' ) format( 'woff' ),
+		 url( '../demo/fonts/ginger-bold.ttf'  ) format( 'truetype' ),
+		 url( '../demo/fonts/ginger-bold.svg#f37_ginger_bold' ) format( 'svg' );
+}
+
+
+
+
+    /***************/
+   /*             */
+  /*   General   */
+ /*             */
+/***************/
+
+
+@media all and ( min-aspect-ratio: 4/3 ){
+
+	html, body { font-size: 1.3333vh; }
+}
+@media all and ( max-aspect-ratio: 4/3 ){
+
+	html, body { font-size: 1vw; }
+}
+html, body {
+
+	width:  100%;
+	height: 100%;
+}
+body {
+
+	margin:  0;
+	border:  0;
+	padding: 0;
+	background-color: #111;
+	color: #666;
+	font-family: Ginger, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	text-align: center;
+}
+* {
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+
+	color: #FFF;
+}
+h1 {
+	
+	width: 100%;
+	padding: 6rem 0 0 0;
+	text-align: center;
+	color: #FFF;
+	font-weight: 100;
+	font-size:   4rem;
+	line-height: 4rem;
+	letter-spacing: -0.05rem;
+}
+
+
+
+
+#fullscreen-toggle {
+
+	position: absolute;
+	top:   2rem;
+	right: 7rem;
+}
+#fullscreen-toggle-container {
+
+	background-color: #111;
+}
+:-webkit-full-screen {
+
+    position: fixed;
+    top:      0;
+    width:  100%;
+    height: 100%;
+    background: none;
+}
+
+
+
+
+footer {
+
+	position: absolute;
+	bottom:  2rem;
+	left:    0;
+	width: 100%;
+	text-align: center;
+	font-size:   1.2rem;
+	line-height: 3.0rem;
+}
+
+
+
+
+
+
+
