@@ -1,0 +1,120 @@
+<div id="page" class="cv">
+  <header>
+    <div class="turntable"
+         ng-include="'../assets/svg/turntable-wide.svg'"
+         ng-click="turntableToggle()"></div>
+    <div class="title">
+      <h1>Barret Anspach</h1>
+      <h2>Designer &times; Web Developer</h2>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <h2>Profile</h2>
+      <p ng-bind-html="cv.profile"></p>
+    </article>
+
+    <article>
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-job" ng-repeat="job in cv.timeline | orderBy:'job.startDate'">
+          <h3>{{job.position}}</h3>
+          <h4>{{job.company}}</h4>
+          <h5 ng-if="!job.isCurrent">{{job.startDate | date:'MMM yyyy'}} – {{job.endDate | date:'MMM yyyy'}}</h5>
+          <h5 ng-if="!job.endDate && job.isCurrent">{{job.startDate | date:'MMM yyyy'}} – Present</h5>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h2>Experience</h2>
+      <div class="skill" ng-repeat="skill in cv.experience">
+        <div class="skill-description">
+          <h3>{{skill.name}}</h3>
+          <h5>{{skill.tools}}</h5>
+        </div>
+
+        <div class="skill-instances">
+          <div class="skill-instance" ng-repeat="job in skill.jobs">
+            <h4>{{job.company}}</h4>
+            <p ng-bind-html="job.description"></p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <aside>
+    <!--<article ng-if="cv.portfolio">-->
+      <!--<h2>Portfolio</h2>-->
+      <!--<a ng-if="cv.portfolio.websiteUrl"-->
+         <!--ng-href="{{cv.portfolio.websiteUrl}}"-->
+         <!--target="_blank">-->
+        <!--<i class="cvset-website-heavy"></i> anspa.ch-->
+      <!--</a>-->
+      <!--<a ng-if="cv.portfolio.soundcloudUrl"-->
+         <!--ng-href="{{cv.portfolio.soundcloudUrl}}"-->
+         <!--target="_blank">-->
+        <!--<i class="cvset-website-heavy"></i> Soundcloud-->
+      <!--</a>-->
+    <!--</article>-->
+
+    <article ng-if="cv.contact">
+      <h2>Contact</h2>
+      <a ng-if="cv.contact.email"
+         ng-href="mailto:{{cv.contact.email}}?subject=Hi Barret! I read your resumé and want to know more.">
+        <i class="cvset-email-heavy"></i> {{cv.contact.email}}
+      </a>
+      <a ng-if="cv.contact.phone"
+         ng-href="tel://{{cv.contact.phone}}">
+        <i class="cvset-telephone-heavy"></i> {{cv.contact.phone}}
+      </a>
+      <a ng-if="cv.contact.linkedin"
+         ng-href="{{cv.contact.linkedin.url}}"
+         target="_blank">
+        <i class="cvset-linkedin-heavy"></i> {{cv.contact.linkedin.display}}
+      </a>
+    </article>
+
+    <article ng-if="cv.education">
+      <h2>Education</h2>
+      <div class="degree" ng-repeat="class in cv.education">
+        <h3>{{class.degree}}</h3>
+        <h4>{{class.institution}}</h4>
+        <h5>{{class.startDate | date:'yyyy'}} – {{class.endDate | date:'yyyy'}}</h5>
+      </div>
+    </article>
+
+    <article ng-if="cv.references">
+      <h2>References</h2>
+      <div class="reference" ng-repeat="reference in cv.references">
+        <h3>{{reference.name}}</h3>
+        <p>{{reference.title}},</p>
+        <h5>{{reference.company}}</h5>
+        <a ng-if="reference.phone"
+           ng-href="tel://{{reference.phone}}">
+          <i class="cvset-telephone-heavy"></i> {{reference.phone}}
+        </a>
+        <a ng-if="reference.email"
+           ng-href="mailto:{{reference.email}}?subject=Hi {{reference.name}}, I'm enquiring about Barret Anspach">
+          <i class="cvset-email-heavy"></i> {{reference.email}}
+        </a>
+      </div>
+    </article>
+
+  </aside>
+
+  <nav>
+    <div class="button_group">
+      <button class="nav" ui-sref="music">
+        <h4>Music</h4>
+      </button>
+      <button class="nav" ui-sref="book">
+        <h4>Portfolio</h4>
+      </button>
+    </div>
+  </nav>
+</div>
+
+

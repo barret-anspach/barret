@@ -1,0 +1,101 @@
+.movement_list {
+  z-index: 2;
+  display: block;
+  width: 100%;
+  color: $primary_color;
+  padding: 4vmin 0 2vmin;
+  h4, button {
+    display: inline;
+  }
+}
+.movement {
+  position: relative;
+  display: block;
+  padding: 1vmin 0 0;
+  margin: 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.timestamp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+.progress_bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 4pt;
+  margin-top: $lg-font;
+  background-color: desaturate(lighten($tertiary_color, 10%), 40%);
+  opacity: 1;
+  transition-property: opacity, background-color, width;
+  transition: .66s ease-in-out;
+}
+.progress_bar_progress {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: rgba($secondary_color, 0.5);
+  mix-blend-mode: overlay;
+  transition: width .3s ease-out;
+}
+.progress_tick {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1em;
+  bottom: 0;
+  left: 0;
+  border-right: 4pt solid $tertiary_color;
+  mix-blend-mode: multiply;
+  transition: left .2s ease;
+  &:hover {
+    cursor: hand;
+  }
+}
+button.movement_button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  svg#music_button {
+    flex: 0 0 auto;
+    display: block;
+    width: .67em;
+    height: .67em;
+    margin-right: .5em;
+    path {
+      fill: $primary_color;
+      transition: fill .33s ease-in-out;
+    }
+  }
+  &:hover svg#music_button path,
+  &.pause_button svg#music_button path {
+    fill: $tertiary_color;
+  }
+  h4 {
+    flex: 1 1 auto;
+    display: inline;
+    width: auto;
+    margin: 0 !important;
+    color: $primary_color;
+    text-align: left;
+    word-break: break-word;
+    transition: color .33s ease-in-out;
+  }
+  &.pause_button h4 {
+    color: $tertiary_color;
+  }
+}

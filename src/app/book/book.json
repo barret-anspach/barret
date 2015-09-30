@@ -1,0 +1,140 @@
+{
+  "results": [
+    {
+      "name": "'Mo-Wave! Queer music and arts festival",
+      "type": "Web",
+      "overview": "Multi-day, multi-venue festival. Fairly simple requirements for a website: 1) to be easy for organizers to manage, update and reorder content as needed; and 2) to be easy for potential festival-goers to learn more about, and purchase tickets for, the weekend's schedule and assortment of performers and events. Festival zine print production and designs.",
+      "components": "Web design, print design, web development",
+      "links": [
+        {
+          "name": "'Mo-Wave! website",
+          "url": "http://mowavefestival.com/"
+        }
+      ],
+      "gallery": [
+        {
+          "url": "../assets/images/mowave/Saturday-Day-Info-5PM.jpg",
+          "caption": "Page detail from 'Mo-Wave! zine.",
+          "isFeatured": true
+        },
+        {
+          "url": "../assets/images/mowave/Saturday-Day-Info-67PM.jpg",
+          "caption": "Page detail from 'Mo-Wave! zine.",
+          "isFeatured": false
+        },
+        {
+          "url": "../assets/images/mowave/Saturday-Day-Info-789PM.jpg",
+          "caption": "Page detail from 'Mo-Wave! zine.",
+          "isFeatured": false
+        },
+        {
+          "url": "../assets/images/mowave/Saturday-Day-Info-101112.jpg",
+          "caption": "Page detail from 'Mo-Wave! zine.",
+          "isFeatured": false
+        }
+      ]
+    },
+    {
+      "name": "Swiss Delta",
+      "type": "Identity",
+      "components": "Technical designs, brand identity, marketing, packaging, website (in progress)",
+      "overview": "An American-designed, Swiss made watch brand, Swiss Delta required watch designs for an inaugural collection spanning several watch functions, a variety of interrelating components, and exacting manufacturing requirements.",
+      "links": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "gallery": [
+        {
+          "caption": "Two-eye chronograph, 42mm, black dial, brushed stainless steel case, polished hardware.",
+          "isFeatured": true,
+          "url": "../assets/images/swiss_delta/swiss_delta_A-22_Bbr.png"
+        },
+        {
+          "caption": "Field watch (three hands / date), 38mm, white dial, brushed ion-plated black stainless steel case, polished hardware.",
+          "isFeatured": false,
+          "url": "../assets/images/swiss_delta/swiss_delta_A-30_W.png"
+        },
+        {
+          "caption": "Three-eye chronograph, 42mm, white dial with black subdials, brushed stainless steel case, polished hardware.",
+          "isFeatured": false,
+          "url": "../assets/images/swiss_delta/swiss_delta_A-36_Wb.png"
+        },
+        {
+          "caption": "Field watch (three hands), black dial and dial ring, brushed ion-plated black stainless steel case, polished hardware.",
+          "isFeatured": false,
+          "url": "../assets/images/swiss_delta/swiss_delta_A-04_B.png"
+        }
+      ]
+    },
+    {
+      "name": "Music Posters",
+      "type": "Print",
+      "components": "Print design",
+      "overview": "Playing in the band Night Cadet has given me many opportunities to make posters for gigs, both for our own shows and for other bands we've played with.",
+      "links": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "gallery": [
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/posters/Sept-22-Poster-01.png"
+        },
+        {
+          "caption": "",
+          "isFeatured": true,
+          "url": "../assets/images/posters/July-2-Poster-01.png"
+        },
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/posters/Fancy - LA Home Room.jpg"
+        },
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/posters/SP Vol-1 Poster.jpg"
+        },
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/posters/NCTractorPoster-01.png"
+        }
+      ]
+    },
+    {
+      "name": "Tuktu",
+      "type": "Print",
+      "components": "Print design, Identity",
+      "overview": "My good friend Ben McAllister needed a libretto for a performance his band Tuktu was giving of a song cycle about the Inuit myth of Qayak. In the process I also created a logo for printing on shirts and other merch.",
+      "links": [
+        {
+          "name": "Tuktu",
+          "url": "http://www.tuktuband.com/"
+        }
+      ],
+      "gallery": [
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/tuktu/tuktu_logo-05.svg"
+        },
+        {
+          "caption": "",
+          "isFeatured": false,
+          "url": "../assets/images/tuktu/tuktu_page-03.png"
+        },
+        {
+          "caption": "",
+          "isFeatured": true,
+          "url": "../assets/images/tuktu/tuktu_page2-04.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{ "results": [
+	{
+        "contact": {
+            "email": "hello@anspa.ch",
+            "linkedin": {
+                "display": "/barretanspach",
+                "url": "http://www.linkedin.com/in/barretanspach"
+            },
+            "phone": "425.736.6228"
+        },
+        "createdAt": "2015-09-25T23:04:09.300Z",
+        "education": [
+            {
+                "degree": "MM in Composition",
+                "endDate": "2010-05-01T00:00:00Z",
+                "institution": "The Juilliard School",
+                "startDate": "2009-09-01T00:00:00Z"
+            },
+            {
+                "degree": "BM in Composition with Scholastic Distinction",
+                "endDate": "2009-05-01T00:00:00Z",
+                "institution": "The Juilliard School",
+                "startDate": "2005-09-01T00:00:00Z"
+            }
+        ],
+        "experience": [
+            {
+                "jobs": [
+                    {
+                        "company": "Artifact Technologies",
+                        "description": "Seattle-based startup focused on location-based engagement. Design and implementation of CMS for custom media presentations; corporate and product sites."
+                    },
+                    {
+                        "company": "Civilization",
+                        "description": "Boutique design firm. Led development of event discovery/management site for Seattle Design Festival; photography portfolio site for Amanda Ringstad; among other projects."
+                    },
+                    {
+                        "company": "Freelance Work",
+                        "description": "Design and development for ‘Mo-Wave! music and arts festival, band sites for Night Cadet and The Fancy."
+                    }
+                ],
+                "name": "Web Development",
+                "tools": "AngularJs, SCSS, Gulp, Parse, Node.js, PHP, WordPress"
+            },
+            {
+                "jobs": [
+                    {
+                        "company": "Artifact Technologies",
+                        "description": "Development of interface components for augmented reality game BattleKasters, including UI, illustration and light animation. Corporate rebranding, web UX design for custom CMS tools."
+                    },
+                    {
+                        "company": "Seattle Watch Company",
+                        "description": "Technical specifications and designs, branding and marketing materials for an American-engineered, Swiss-made watch brand."
+                    },
+                    {
+                        "company": "Freelance Work",
+                        "description": "Pacific Northwest Ballet Gala invitations and print materials; wedding invitations, related print; event posters and merch for local Seattle bands."
+                    }
+                ],
+                "name": "Graphic Design, Branding",
+                "tools": "Adobe Creative Cloud (Illustrator, Photoshop, InDesign, Flash)"
+            }
+        ],
+        "objectId": "MMnhc0DYCk",
+        "portfolio": {
+            "soundcloudUrl": "https://soundcloud.com/barretanspach",
+            "websiteUrl": "http://anspa.ch"
+        },
+        "profile": "I’m experienced in product, graphic, web and UX design, and in developing complex, single-page applications using cutting-edge web technologies. I thrive in a dynamic, problem-solving environment, where learning new tools is not only encouraged but expected.",
+        "references": [
+            {
+                "company": "Artifact Technologies",
+                "email": "ben@listenfaster.com",
+                "name": "Ben McAllister",
+                "phone": "206.849.3183",
+                "title": "Former VP Engineering"
+            },
+            {
+                "company": "Artifact Technologies",
+                "email": "sam@artifacttech.com",
+                "name": "Sam Teplitsky",
+                "phone": "",
+                "title": "Chief Executive Officer"
+            }
+        ],
+        "timeline": [
+            {
+                "company": "Seattle Watch Company",
+                "endDate": "",
+                "isCurrent": true,
+                "position": "Product Design",
+                "startDate": "2011-11-01T09:00:00Z"
+            },
+            {
+                "company": "Civilization",
+                "endDate": "2014-07-31T09:00:00Z",
+                "isCurrent": false,
+                "position": "Web Developer",
+                "startDate": "2014-05-01T09:00:00Z"
+            },
+            {
+                "company": "Artifact Technologies",
+                "endDate": "",
+                "isCurrent": true,
+                "position": "Interactive Designer",
+                "startDate": "2014-08-01T09:00:00Z"
+            }
+        ],
+        "updatedAt": "2015-09-26T05:52:33.272Z"
+    }
+] }

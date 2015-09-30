@@ -1,0 +1,676 @@
+$lg-font: 4vmin;
+$med-font: ($lg-font * 5) / 12;
+$sm-font: $lg-font / 3;
+
+#page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin: ($lg-font * 1.5) auto;
+  border: ($lg-font / 2) solid $primary_color;
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: ($lg-font * 5) / 3;
+    .title {
+      flex: 3;
+    }
+    .turntable {
+      cursor: pointer;
+      position: relative;
+      flex: 1;
+      height: ($lg-font * 3);
+      margin-right: $lg-font;
+      svg#turntable {
+        position: absolute;
+        display: block;
+        left: 0;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  main {
+    flex: 3;
+    order: 3;
+  }
+  aside {
+    //flex: 0 1 auto;
+    flex: 1;
+    order: 2;
+    width: 25.9%;
+    margin-right: $lg-font;
+    article {
+      padding-bottom: ($lg-font * 3) / 2;
+    }
+    article + article {
+      border-top: none;
+      padding: 0 0 $lg-font;
+    }
+    .degree,
+    .reference {
+      padding-bottom: ($lg-font / 2);
+    }
+    a {
+      display: block;
+      font-weight: 400;
+      text-decoration: none;
+      border-bottom: none;
+      padding: 0 $sm-font 0 0;
+      &:visited {
+        color: $primary_color;
+      }
+    }
+  }
+  article {
+    padding: 0 0 $lg-font;
+  }
+  article + article {
+    border-top: 1px solid $primary_color;
+    padding: $lg-font 0;
+  }
+  h2, h3, h4, h5, p, .link, a {
+    line-height: ($lg-font * 7) / 12;
+  }
+  h1 {
+    font-size: $lg-font;
+    font-weight: 800;
+    letter-spacing: .07em;
+    margin: 0;
+  }
+  h2 {
+    font-size: $med-font;
+    font-weight: 800;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    margin: 0 0 ($lg-font / 2);
+  }
+  h3 {
+    font-size: $med-font;
+    font-weight: 800;
+    letter-spacing: .03em;
+    margin: 0;
+  }
+  h4 {
+    font-size: $sm-font;
+    font-weight: 800;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  h5 {
+    font-size: $sm-font;
+    font-weight: 400;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  p {
+    font-size: $med-font;
+    font-weight: 400;
+    letter-spacing: .03em;
+    margin: 0;
+  }
+  a {
+    font-size: $med-font;
+    font-weight: 800;
+    letter-spacing: .03em;
+    margin: 0;
+  }
+}
+
+#page.cv {
+  margin: 0 auto;
+  transition: margin .33s ease-in-out;
+  @media screen and (min-width: 900px) {
+    margin: ($lg-font * 1.5) auto;
+  }
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  .timeline-job {
+    position: relative;
+    display: block;
+    flex: 0 0 auto;
+    width: calc((100% / 3) - #{$lg-font * (2/3)});
+  }
+}
+
+.skill {
+  margin-bottom: $lg-font;
+  p {
+    margin: 0;
+  }
+  .skill-description {
+    margin-bottom: ($lg-font / 2);
+  }
+  .skill-instances {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    .skill-instance {
+      flex: 0 0 auto;
+      width: calc((100% / 3) - #{$lg-font * (2/3)});
+    }
+  }
+}
+
+@media screen and (max-height: 799px) {
+  $lg-font: 24pt;
+  $med-font: ($lg-font * 5) / 12;
+  $sm-font: $lg-font / 3;
+
+  margin: 0;
+
+  #page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin: ($lg-font * 1.5) auto;
+    border: ($lg-font / 2) solid $primary_color;
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      order: 1;
+      flex: 0 0 100%;
+      width: 100%;
+      margin-bottom: ($lg-font * 5) / 3;
+      .title {
+        flex: 3;
+      }
+      .turntable {
+        cursor: pointer;
+        position: relative;
+        flex: 1;
+        height: ($lg-font * 3);
+        margin-right: $lg-font;
+        svg#turntable {
+          position: absolute;
+          display: block;
+          left: 0;
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+    main {
+      flex: 3;
+      order: 3;
+    }
+    aside {
+      flex: 1;
+      order: 2;
+      width: 25.9%;
+      margin-right: $lg-font;
+      article {
+        padding-bottom: ($lg-font * 3) / 2;
+      }
+      article + article {
+        border-top: none;
+        padding: 0 0 $lg-font;
+      }
+      .degree,
+      .reference {
+        padding-bottom: ($lg-font / 2);
+      }
+      a {
+        display: block;
+        font-weight: 400;
+        text-decoration: none;
+        border-bottom: none;
+        padding: 0 $sm-font 0 0;
+        &:visited {
+          color: $primary_color;
+        }
+      }
+    }
+    article {
+      padding: 0 0 $lg-font;
+    }
+    article + article {
+      border-top: 1px solid $primary_color;
+      padding: $lg-font 0;
+    }
+
+    h2, h3, h4, h5, p, .link, a {
+      line-height: ($lg-font * 7) / 12;
+    }
+    h1 {
+      font-size: $lg-font;
+      font-weight: 800;
+      letter-spacing: .07em;
+      margin: 0;
+    }
+    h2 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 ($lg-font / 2);
+    }
+    h3 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    h4 {
+      font-size: $sm-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    h5 {
+      font-size: $sm-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    p {
+      font-size: $med-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    a {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+  }
+
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    .timeline-job {
+      position: relative;
+      display: block;
+      flex: 0 0 auto;
+      width: calc((100% / 3) - #{$lg-font * (2/3)});
+    }
+  }
+
+  .skill {
+    margin-bottom: $lg-font;
+    p {
+      margin: 0;
+    }
+    .skill-description {
+      margin-bottom: ($lg-font / 2);
+    }
+    .skill-instances {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      .skill-instance {
+        flex: 0 0 auto;
+        width: calc((100% / 3) - #{$lg-font * (2/3)});
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  #page {
+    $lg-font: 24pt;
+    $med-font: ($lg-font * 5) / 12;
+    $sm-font: $lg-font / 3;
+
+    margin: 0;
+
+    header .title {
+      order: 1;
+      flex: 2;
+    }
+    main {
+      order: 3;
+      flex: 2;
+    }
+    aside {
+      order: 2;
+    }
+    h2, h3, h4, h5, p, .link, a {
+      line-height: ($lg-font * 7) / 12;
+    }
+    h1 {
+      font-size: $lg-font;
+      font-weight: 800;
+      letter-spacing: .07em;
+      margin: 0;
+    }
+    h2 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 ($lg-font / 2);
+    }
+    h3 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    h4 {
+      font-size: $sm-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    h5 {
+      font-size: $sm-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    p {
+      font-size: $med-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    a {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+
+
+    .timeline {
+      flex-flow: row wrap;
+      .timeline-job {
+        width: calc(50% - #{$lg-font / 2});
+        margin-right: $lg-font / 2;
+        padding-bottom: ($lg-font / 2);
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+        &:nth-of-type(2n) {
+          margin-right: 0;
+          .timeline-trajectory {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .skill-instance {
+      width: calc(50% - #{$lg-font / 2});
+      padding-bottom: ($lg-font / 2);
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  #page {
+    $lg-font: 24pt;
+    $med-font: ($lg-font * 5) / 12;
+    $sm-font: $lg-font / 3;
+
+    margin: 0;
+
+    header {
+      order: 1;
+      flex-flow: row wrap;
+      .title {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      .turntable {
+        height: 24vmin;
+        flex: 1 1 auto;
+        margin: 0;
+        svg#turntable {
+          position: relative;
+          left: auto;
+          padding-bottom: $lg-font;
+        }
+      }
+    }
+
+    main {
+      order: 3;
+      flex: 8;
+    }
+    aside {
+      order: 2;
+      flex: 5;
+    }
+    h2, h3, h4, h5, p, .link, a {
+      line-height: ($lg-font * 7) / 12;
+    }
+    h1 {
+      font-size: $lg-font;
+      font-weight: 800;
+      letter-spacing: .07em;
+      margin: 0;
+    }
+    h2 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin: 0 0 ($lg-font / 2);
+    }
+    h3 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    h4 {
+      font-size: $sm-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    h5 {
+      font-size: $sm-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    p {
+      font-size: $med-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+    a {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      margin: 0;
+    }
+
+
+    .timeline {
+      flex-flow: row wrap;
+      .timeline-job {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: ($lg-font / 2);
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .skill-instance {
+      width: 100%;
+      padding-bottom: ($lg-font / 2);
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 449px) {
+  #page.cv {
+    $lg-font: 24pt;
+    $med-font: ($lg-font * 5) / 12;
+    $sm-font: $lg-font / 3;
+
+    margin: 0;
+
+    header {
+      order: 1;
+      flex-flow: row wrap;
+      .title {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      .turntable {
+        height: 36vmin;
+        flex: 1 1 auto;
+        margin: 0;
+        padding-bottom: $lg-font;
+        svg#turntable {
+          position: relative;
+          left: auto;
+          padding: 0;
+        }
+      }
+    }
+
+    main {
+      order: 2;
+      flex: 0 0 auto;
+      width: 100%;
+    }
+    aside {
+      order: 3;
+      flex: 0 0 auto;
+      width: 100%;
+      border-top: 1pt solid $primary_color;
+      padding-top: ($lg-font);
+    }
+    h2, h3, h4, h5, p, .link, a {
+      line-height: ($lg-font * 7) / 12;
+    }
+    h1 {
+      font-size: $lg-font;
+      font-weight: 800;
+      letter-spacing: .07em;
+      margin: 0;
+    }
+    h2 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 ($lg-font / 2);
+    }
+    h3 {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-align: center;
+      margin: 0;
+    }
+    h4 {
+      font-size: $sm-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+    }
+    h5 {
+      font-size: $sm-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: ($lg-font / 2);
+      margin: 0;
+    }
+    p {
+      font-size: $med-font;
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-align: center;
+      margin: 0;
+    }
+    a {
+      font-size: $med-font;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-align: center;
+      margin: 0;
+    }
+
+
+    .timeline {
+      flex-flow: row wrap;
+      .timeline-job {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+        padding-bottom: ($lg-font / 2);
+        text-align: center;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .skill {
+      margin-top: ($lg-font * .75);
+      margin-bottom: ($lg-font * 1.5);
+    }
+    .skill-instance {
+      width: 100%;
+      padding-bottom: ($lg-font / 2);
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    aside .reference {
+      padding-bottom: $lg-font;
+      h5 {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+// COLORS
+
+$black: rgba(0, 0, 0, 0.73);
+$navy: navy;
+$antiquewhite: antiquewhite;
+
+$lightgrey: rgba(212, 212, 212, 0.5);
+$grey: rgba(202, 202, 202, 0.88); //rgba(lightgrey, .88)
+$white: rgb(255, 255, 255);
+
+$lightgold: hsla(40, 40%, 50%, 0.73);
+$gold: hsla(40, 80%, 40%, 1);
+$dodgerblue: dodgerblue;
+
+$primary_color: $black;
+$secondary_color: $white;
+$tertiary_color: $dodgerblue;
+
+// LAYOUT UNITS
+
+$margin: 3em;

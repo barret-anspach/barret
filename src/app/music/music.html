@@ -1,0 +1,43 @@
+<div id="page" class="music">
+  <h1>Music</h1>
+  <h2>More about my work as a composer and musician.</h2>
+
+  <section id="bio">
+    <article>
+      <p>I graduated from The Juilliard School in 2009 with a Bachelors of Music with Scholastic Distinction, and in 2010 with a Masters of Music. Interdisciplinary work with dance and pop music has led to a number of compositions and productions, including orchestral premieres at the Pacific Northwest Ballet for newly-choreographed ballets, and arrangement work for a number of Seattle-based musical artists.</p>
+    </article>
+  </section>
+
+  <main id="music">
+    <article ng-repeat="work in works | orderBy : '-date'">
+      <figure>
+        <div class="glyph" ng-include="trustSrc(work.glyph.image.url)"></div>
+        <div class="title">
+          <h2>{{work.title}}</h2>
+          <h4 ng-if="work.instrumentation || work.duration">
+            <span class="instrumentation"><span ng-if="work.instrumentation">for</span> {{work.instrumentation}} &emsp; </span>
+            <span class="inline_block lightweight">{{work.duration}} min</span></h4>
+        </div>
+        <div class="caption" ng-if="work.image.url">{{work.imgCaption}}</div>
+
+        <movements ng-if="work.movements" list="work.movements" work="work"></movements>
+      </figure>
+
+      <div class="description">
+        <span ng-bind-html="work.description"></span>
+        <!--<a class="tag" ng-repeat="tag in work.tags">{{tag.name}}</a>-->
+      </div>
+    </article>
+  </main>
+
+  <nav>
+    <div class="button_group">
+      <button class="nav" ui-sref="cv">
+        <h4>CV</h4>
+      </button>
+      <button class="nav" ui-sref="book">
+        <h4>Portfolio</h4>
+      </button>
+    </div>
+  </nav>
+</div>

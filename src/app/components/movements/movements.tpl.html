@@ -1,0 +1,26 @@
+<div class="movement_list">
+  <div class="movement" ng-repeat="movement in mvmt.list | orderBy : 'order'">
+    <button id="{{movement.slug}}_button" class="movement_button" type="button" role="button"
+            ng-click="mvmt.playMvmt(movement)"
+            ng-class="{'pause_button': movement.isPlaying, 'play_button': !movement.isPlaying}">
+      <div ng-include="'../assets/svg/music_button.svg'"></div>
+      <h4>{{movement.name}}</h4>
+      <h5 class="movement_time">{{movement.time}}</h5>
+    </button>
+
+    <audio id="{{movement.slug}}" preload="metadata">
+      <source ng-src="{{movement.soundUrl}}" type="audio/mp3"/>
+    </audio>
+  </div>
+
+  <div id="{{mvmt.workTitle}}_progress_bar" class="progress_bar"
+       ng-class="{'is_playing': mvmt.currentMvmt.isPlaying}"
+       ng-show="mvmt.currentMvmt">
+    <div id="{{mvmt.workTitle}}_progress_bar_progress" class="progress_bar_progress"></div>
+    <div id="{{mvmt.workTitle}}_progress_tick" class="progress_tick"></div>
+  </div>
+  <div class="timestamp">
+    <h5 class="movement_current_time">{{mvmt.currentMvmt.currentTime}}</h5>
+    <h5 class="movement_total_time">{{mvmt.currentMvmt.time}}</h5>
+  </div>
+</div>

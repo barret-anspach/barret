@@ -1,0 +1,167 @@
+#page.book {
+  display: block;
+  margin: 0 auto;
+
+  header {
+    display: block;
+  }
+  main {
+    display: block;
+    columns: 1;
+    column-gap: 0;
+  }
+  article.project-thumb {
+    position: relative;
+    display: flex;
+    break-inside: avoid;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 6vmin;
+    border: 0;
+    img {
+      flex: 0 0 auto;
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      transition: opacity .33s ease-in-out;
+    }
+    .project-thumb-text {
+      z-index: 40;
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 6vmin;
+      left: 0;
+      padding: 12pt;
+      border: 3pt solid $primary_color;
+      opacity: 0;
+      background-color: transparent;
+      transition-property: opacity;
+      transition: .33s ease-in-out;
+      h2, p {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: $secondary_color;
+      }
+      h2 {
+        font-weight: 900;
+      }
+      p {
+        font-weight: 600;
+      }
+    }
+    .image-hover {
+      z-index: 20;
+      cursor: pointer;
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 6vmin;
+      left: 0;
+      background-color: rgba($tertiary_color, 0);
+      mix-blend-mode: normal;
+      transition-property: background-color, mix-blend-mode;
+      transition: .33s ease-in-out;
+    }
+    button.learn_more:hover {
+      color: $primary_color;
+      background-color: $secondary_color;
+    }
+    &:hover img {
+      opacity: 0.73;
+    }
+    &:hover .image-hover {
+      opacity: 1;
+      background-color: rgba($tertiary_color, 1);
+      mix-blend-mode: multiply;
+    }
+    &:hover .project-thumb-text {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    main {
+      columns: 2;
+      column-gap: $lg-font;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    margin: ($lg-font * 1.5) auto;
+  }
+}
+
+#page.project {
+  display: block;
+  h1 {
+    width: 100%;
+  }
+  main {
+    columns: 1;
+    column-gap: 0;
+    @media screen and (min-width: 600px) {
+      columns: 2;
+      column-gap: $lg-font;
+    }
+  }
+  .overview {
+    display: block;
+    width: 100%;
+    margin-bottom: ($lg-font * 2);
+    h3 {
+      margin-bottom: ($lg-font / 2);
+    }
+  }
+  .overview-links {
+    margin-top: ($lg-font / 2);
+  }
+  figure {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 $lg-font;
+    break-inside: avoid;
+    img {
+      z-index: 300;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    // IF YOU FEEL REALLY COMPELLED TO SHOW A CAPTION:
+    //.image-hover-text {
+    //  cursor: crosshair;
+    //  bottom: 0;
+    //}
+    //&:hover, &:active {
+    //  .image-hover-text {
+    //    opacity: 1;
+    //    background-color: rgba($secondary_color, 0.88);
+    //  }
+    //}
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      &:hover a {
+        color: $tertiary_color;
+        border-bottom-color: $tertiary_color;
+      }
+    }
+    a {
+      color: $primary_color;
+      border-bottom-color: $primary_color;
+    }
+  }
+}

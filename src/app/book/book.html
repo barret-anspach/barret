@@ -1,0 +1,30 @@
+<div id="page" class="book">
+  <header>
+    <h1>Portfolio</h1>
+    <h2>Here are a few projects I've worked on in the recent past.</h2>
+  </header>
+  <main>
+    <article id="project.slug" class="project-thumb" ng-repeat="project in book | orderBy:'type'">
+      <img ng-if="project.featuredImg" ng-src="{{project.featuredImg.url}}" alt="{{project.featuredImg.caption}}"/>
+      <div class="image-hover"></div>
+      <div class="project-thumb-text">
+        <h2>{{project.name}}</h2>
+        <p>{{project.components}}</p>
+        <button class="learn_more" ui-sref="project({id: project.slug})">
+          <h4>Details</h4>
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <nav>
+    <div class="button_group">
+      <button class="nav" ui-sref="music">
+        <h4>Music</h4>
+      </button>
+      <button class="nav" ui-sref="cv">
+        <h4>CV</h4>
+      </button>
+    </div>
+  </nav>
+</div>

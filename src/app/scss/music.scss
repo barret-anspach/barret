@@ -1,0 +1,189 @@
+#page.music {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  transition: margin-top .33s ease-in-out;
+  @media screen and (min-width: 900px) {
+    margin: ($lg-font * 1.5) auto;
+  }
+
+  section#bio {
+    article {
+      width: 100%;
+      padding-bottom: 0;
+    }
+    article p {
+      width: 100%;
+      padding: 6vmin 0;
+      font-weight: 600;
+      font-size: 2.5vmin;
+      line-height: 3.5vmin;
+      @media screen and (max-width: 600px) {
+        font-size: 10pt;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  article {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 6vmin;
+    @media screen and (min-width: 450px) and (max-width: 599px) {
+      width: calc(50% - #{$lg-font});
+    }
+    @media screen and (min-width: 600px) {
+      width: calc((100% / 3) - #{$lg-font * (2/3)});
+    }
+    h1 {
+      line-height: 1em;
+      margin-bottom: 6vmin;
+    }
+    h2, h4 {
+      margin-bottom: 2vmin;
+    }
+    p {
+      font-weight: 600;
+      a {
+        //font-size: 1em;
+      }
+    }
+    a.tag {
+      display: inline-block;
+      margin-right: $margin;
+      //line-height: 1.846;
+      text-transform: uppercase;
+    }
+    figure {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      .caption {
+        z-index: 300;
+        position: absolute;
+        display: none ;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 1vmin;
+        border-bottom: 2pt solid rgba($secondary_color, .88);
+        margin-bottom: ($margin / 2);
+        margin-right: ($margin / 2);
+        color: rgba($secondary_color, .88);
+        font-size: .83em;
+        font-weight: 600;
+        text-align: right;
+        opacity: 0;
+        transition: opacity .33s ease;
+      }
+      &:hover .caption {
+        opacity: 1;
+      }
+      .title {
+        z-index: 2;
+        position: relative;
+        //padding: 1em 1.5em 2em;
+        //top: 0;
+        //left: 0;
+        color: $primary_color;
+        h2 {
+          display: inline;
+          font-weight: 700;
+          margin-top: 0;
+        }
+        h4 {
+          display: inline;
+        }
+        .instrumentation {
+          //display: inline;
+          //padding-right: 1em;
+          white-space: pre-line;
+        }
+      }
+      img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        //filter: #{saturate(80%) brightness(65%) sepia(90%) hue-rotate(212deg) opacity(60%)};
+        // For NAVY-ish hue:  hue-rotate(188deg)
+        filter: #{saturate(80%) brightness(80%) sepia(90%) hue-rotate(333deg) opacity(60%)};
+      }
+      image.music_img {
+        object-fit: cover;
+      }
+    }
+    .description {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: ($lg-font / 2) 0;
+      p {
+        line-height: 1.5;
+      }
+      p a {
+        color: $primary_color;
+        padding-bottom: 0.2vmin;
+        margin-right: 0;
+        &:hover {
+          color: $tertiary_color;
+        }
+      }
+    }
+  }
+}
+
+#music {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  article {
+    border: none;
+    padding-top: 0;
+  }
+  article + article {
+    border: none;
+    padding-top: 0;
+  }
+  a {
+    margin-right: .5em;
+  }
+}
+
+.glyph svg {
+  .glyph_fill,
+  .glyph_thin_stroke,
+  .glyph_think_stroke {
+    mix-blend-mode: multiply;
+  }
+  .glyph_fill {
+    fill: $gold;
+  }
+  .glyph_superthin_stroke {
+    stroke: $gold;
+    stroke-width: .1;
+    miter-limit: 10;
+  }
+  .glyph_thin_stroke {
+    stroke: $gold;
+    stroke-width: 2;
+    miter-limit: 10;
+  }
+  .glyph_thin_stroke_fill {
+    stroke: $gold;
+    stroke-width: 2;
+    miter-limit: 10;
+    fill: $gold;
+  }
+  .glyph_thick_stroke {
+    stroke: $gold;
+    stroke-width: 4;
+    miter-limit: 10;
+  }
+
+}

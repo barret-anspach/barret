@@ -1,0 +1,38 @@
+<div id="page" class="project">
+  <header>
+    <h1>{{project.name}}</h1>
+  </header>
+
+  <main>
+    <div class="overview">
+      <h2>Overview</h2>
+      <h3>{{project.overview}}</h3>
+      <h4>{{project.components}}</h4>
+
+      <div class="overview-links" ng-if="project.links">
+        <h2>Links</h2>
+        <ul>
+          <li ng-repeat="link in project.links">
+            <a ng-href="{{link.url}}" target="_blank">{{link.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <figure ng-repeat="image in project.gallery">
+      <img ng-src="{{image.url}}" alt=""/>
+      <!-- IF YOU FEEL REALLY COMPELLED TO SHOW A CAPTION: -->
+      <!--<figcaption class="image-hover-text">-->
+        <!--<p>{{image.caption}}</p>-->
+      <!--</figcaption>-->
+    </figure>
+  </main>
+
+  <nav>
+    <button class="nav" ui-sref="book">
+      <h4>Back</h4>
+    </button>
+  </nav>
+</div>
+
+
+
